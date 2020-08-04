@@ -1,0 +1,22 @@
+﻿.container {
+    height: 100vh;
+}
+
+main {
+    height: 100vh;
+}
+
+#landing {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    #landing a {
+        padding: 50px;
+    }
+
+        #landing a i {
+            margin: 0px 20px 0px 20px;
+        }
