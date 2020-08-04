@@ -15,8 +15,24 @@ main {
 
     #landing a {
         padding: 50px;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
     }
 
         #landing a i {
             margin: 0px 20px 0px 20px;
+            font-size: 3rem;
+        }
+
+#generate {
+    margin: 5rem;
+}
+
+    #generate .card {
+        margin-top: 30px;
+    }
+
+        #generate .card .card-header {
+            font-weight: bold;
+            font-size: 1.2rem;
         }

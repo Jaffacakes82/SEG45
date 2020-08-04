@@ -1,4 +1,79 @@
-﻿<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+﻿@model PlanModel
+
+<div id="generate">
+    <div class="text-center">
+        <a asp-action="Generate" class="btn btn-lg btn-secondary">
+            <i class="em em-man-lifting-weights" aria-role="presentation" aria-label=""></i>GIMME ANOTHER ONE<i class="em em-man-lifting-weights" aria-role="presentation" aria-label=""></i>
+        </a>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-header">
+                    Backs &amp; Arms
+                </div>
+                <div class="card-body">
+                    @foreach (var ex in Model.BackAndArms)
+                    {
+                        <p class="card-text">@ex</p>
+                        <hr />
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-header">
+                    Chest &amp; Shoulders
+                </div>
+                <div class="card-body">
+                    @foreach (var ex in Model.ChestAndShoulders)
+                    {
+                        <p class="card-text">@ex</p>
+                        <hr />
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-header">
+                    Legs
+                </div>
+                <div class="card-body">
+                    @foreach (var ex in Model.Legs)
+                    {
+                        <p class="card-text">@ex</p>
+                        <hr />
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-header">
+                    Cardio
+                </div>
+                <div class="card-body">
+                    @foreach (var ex in Model.Cardio)
+                    {
+                        <p class="card-text">@ex</p>
+                        <hr />
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card text-center">
+                <div class="card-header">
+                    Food
+                </div>
+                <div class="card-body">
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
